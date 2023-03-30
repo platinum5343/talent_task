@@ -1,0 +1,22 @@
+.footer-top{
+    padding-bottom: 90px;
+    padding:90px;
+     background: #000F24;
+     .fotimg{
+        display: flex;
+        justify-content: space-around;
+        .ic{
+            width: 3rem;
+            height: 2rem;
+        }
+     }
+     .news-input{
+        
+        border-radius: 1px;
+     }
+     .form-control{
+        background: #000;
+        color: #fff;
+        border: 1px solid #054FB3;
+     }
+}

@@ -1,0 +1,36 @@
+.begin{
+    width: 100%;
+    background: #ccdbf0;
+    padding: 3rem 2px;
+}
+.new{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.last{
+    display: flex;
+    color: #fff;
+}
+.com{
+    justify-content: flex-end;
+    margin-top: 2rem;
+    color: white;
+}
+.second{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 900;
+}
+@media only screen and (max-width: 1024px){
+    .begin{
+        padding: 3rem;
+        justify-content: space-evenly;
+    }
+    .new{
+        gap: 1rem;
+        width: 500px;
+        padding-left: 2rem;
+    }
+}

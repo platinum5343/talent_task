@@ -1,0 +1,120 @@
+// .navbar{
+//     background: blue;
+//     display: flex;
+
+// }
+// .wrapper{
+//     display: flex;
+// margin: auto 2px;
+// }
+// .right{
+//     display: flex;
+//     justify-content: flex-end;
+//     align-items: right;
+// }
+
+.navbar{
+    background-color: #004dbe;
+    box-shadow: 0px 18px 20px rgba(183, 186, 191, 0.04);
+    overflow: hidden;
+    
+    .wrapper{
+        padding: 10px 30px;
+        display: flex;
+        flex: 1 1;
+        align-items: center;
+        justify-content: space-between;
+        
+        .item{
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+        }
+        .left{
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+        .center{
+            font-size: 30px;
+            letter-spacing: 2px;
+        }
+        .right{
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            p{
+                color: #AAC4E6;
+                font-family: 'satoshi';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+            }
+
+            button{
+                color: #004DBE;
+                background: #ffffff;
+                width: 145px;
+                height: 54px;
+                padding: 16px 32px;
+                border-radius: 4px;
+                border: none;
+                font-family: 'satoshi';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+            }
+           
+        }
+    }
+    .nav-btn{
+
+        padding: 5px;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: #ffffff;
+        visibility: hidden;
+        display: none;
+         opacity: 0;
+    }
+
+}
+
+@media only screen and (max-width: 1024px){
+    .wrapper{
+        z-index: 1000;
+        height: 20vh;
+        .right{
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            background-color: #004DBE;
+            transition: 1s;
+            flex-direction: column;
+            transform: translateY(-100vh);
+        }
+        .nav-btn{
+          visibility: visible;
+          opacity: 1;
+          display: block;
+          }
+          .responsive_nav{
+              transform: none;
+          }
+
+          .nav-close-btn{
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+          }
+    }
+    
+}
